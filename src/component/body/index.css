@@ -43,7 +43,6 @@ html.is-theme-style-light,
 }
 
 @media (prefers-color-scheme: light) {
-
   html.is-theme-style-system,
   .is-theme-style-system body {
     background-color: hsl(var(--theme-primary-010));
@@ -52,7 +51,6 @@ html.is-theme-style-light,
 }
 
 @media (prefers-color-scheme: dark) {
-
   html.is-theme-style-system,
   .is-theme-style-system body {
     background-color: hsl(var(--theme-primary-010));
@@ -118,4 +116,24 @@ html.is-theme-background-type-color,
 .is-layout-alignment-bottom-right body {
   justify-content: flex-end;
   align-items: flex-end;
+}
+
+/* kyuu's custom css */
+
+.is-bookmark-style-block .bookmark-wide {
+  grid-column: span 2;
+}
+
+.bookmark-tall {
+  grid-row: span 2;
+}
+
+.group-body {
+  grid-template-columns: repeat(5, 1fr) !important;
+}
+
+.layout-bookmark {
+  max-width: 720px;
+  min-width: 420px;
+  width: 100% !important;
 }
